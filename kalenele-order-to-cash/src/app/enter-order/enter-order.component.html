@@ -1,0 +1,118 @@
+<div class="wholeOrderPage">
+
+<div>
+    <form>
+        <mat-form-field class="customerInputFormField">
+              <mat-label>Item Code</mat-label>
+           <input matInput placeholder="Item Code" #itemCodeValue [value]='itemCode'>
+          
+          </mat-form-field>
+    <form>
+        
+        <mat-form-field class="customerInputFormField">
+              <mat-label>Enter Customer Name</mat-label>
+           <input matInput placeholder="Customer" #customerInputValue>
+          
+          </mat-form-field>
+          <!-- {{customerInputValue.value}} -->
+          <form>
+            <mat-form-field>
+                  <mat-label>Enter Phone Number</mat-label>
+               <input matInput placeholder="Phone Number" #phoneNumberInputValue>
+             
+              </mat-form-field>
+              <!-- {{phoneNumberInputValue.value}} -->
+          <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Order Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <form>
+            <mat-form-field class="descriptionFormField">
+                  <mat-label>Description</mat-label>
+               <input matInput placeholder="Description" #descriptionValue>
+              
+              </mat-form-field>
+        </form>
+
+<div>
+    <mat-radio-group class="orderLocation">
+        <mat-radio-button value="Whatsapp" style='margin-right:16px'>Whatsapp</mat-radio-button>
+        <mat-radio-button value="Web" style='margin-right:16px'>Web</mat-radio-button>
+        <mat-radio-button value="Retail" style='margin-right:16px'>Retail</mat-radio-button>
+        <mat-radio-button value="Exibition" style='margin-right:16px'>Exibition</mat-radio-button>
+        <mat-radio-button value="Partner" style='margin-right:16px'>Partner</mat-radio-button>
+    </mat-radio-group>
+    
+    
+</div>
+
+<div>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+</div>
+          
+<mat-radio-group class="typeRadioGroup" #orderType>
+    <div>Type</div>
+    <mat-radio-button value="Catalog" style='margin-right:16px' >Catalog</mat-radio-button>
+    <mat-radio-button value="Custom">Custom</mat-radio-button>
+</mat-radio-group>
+<div>
+    <form>
+        <mat-form-field>
+              <mat-label>Product Code</mat-label>
+           <input matInput placeholder="Product Code" #productCodeInputValue>
+          
+          </mat-form-field>
+    </form>
+    <!-- {{productCodeInputValue.value}} -->
+  </div>
+<form>
+<mat-form-field>
+<mat-label>Price</mat-label>
+<input matInput placeholder="Price" #priceInputValue>
+</mat-form-field>
+</form>
+
+<form>
+
+<mat-form-field>
+    <mat-label>Quantity</mat-label>
+ <input matInput placeholder="Quantity" #quantityInputValue>
+
+
+</mat-form-field>
+</form>
+<form>
+<mat-form-field>
+    <mat-label>Discount</mat-label>
+ <input matInput placeholder="Discount" #discountInputValue>
+
+</mat-form-field>
+</form>
+<form>
+<mat-form-field>
+    <mat-label>Instructions</mat-label>
+ <input matInput placeholder="Instructions" #instructionsInputValue>
+
+</mat-form-field>
+</form>
+          </form>
+    </form></form>
+ 
+      
+<div class="validateAndSave">
+    <button mat-raised-button (click)="getAllInputValue(itemCodeValue, customerInputValue, phoneNumberInputValue, descriptionValue, productCodeInputValue, priceInputValue, quantityInputValue, discountInputValue, instructionsInputValue)">Validate</button>
+    <button mat-raised-button routerLink="/order-details">Save</button>
+</div>
+<div>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+</div>
+
+
+
+
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,61 @@
+button{
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+};
+
+mat-button-toggle-group {
+    margin-left: 12px;
+}
+  .example-selected-value {
+    margin: 15px 0;
+  }
+span{
+    top: 3rem;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+mat-sidenav-container{
+    height: 100%;
+}
+mat-sidenav, mat-sidenav-content{
+    padding: 0px;
+    
+}
+mat-sidenav{
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    
+}
+table {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  mat-toolbar{
+      margin: 0;
+  }
+.mat-display-1{
+    margin: 0;
+}
+mat-menu{
+    width: 60%
+}
+.navbar{
+    background-color: fuchsia;
+    color: whitesmoke;
+}
+.workloadDiv{
+    padding: 50px;
+    background-color: lightgrey;
+    align-items: center;
+}
+h1{
+    align-self: center;
+}
+.workloadButton{
+    left: 0;
+    background-color: aqua;
+}

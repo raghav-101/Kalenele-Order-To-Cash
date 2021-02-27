@@ -1,0 +1,23 @@
+<div>
+  <mat-toolbar class="navbar" color="primary">
+    <div class="mat-display-1">Kale Nele Order To Cash</div>
+  </mat-toolbar>
+</div>
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [(opened)]="opened">
+    <button mat-raised-button routerLink="">Home Page</button>
+    <button mat-raised-button routerLink="product-details">Product Details</button>
+    <button mat-raised-button routerLink="customer-details">Customer Details</button>
+    <button mat-raised-button routerLink="enter-order">Enter Order</button>
+    <button mat-raised-button routerLink="order-details">Order Details</button>
+    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div mat-subheading-2>
+    <button mat-mini-fab (click)="opened=!opened" color="primary" disableRipple>
+      <mat-icon>menu</mat-icon>
+    </button> 
+
+<router-outlet></router-outlet>
+<div>
+

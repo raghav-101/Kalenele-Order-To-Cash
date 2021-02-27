@@ -1,0 +1,9 @@
+table{
+    width: 100%;
+}
+mat-sidenav{
+    height: 100%;
+}
+.goToCustomerPage{
+    padding-top: 3rem;
+}
